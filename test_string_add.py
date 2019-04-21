@@ -23,3 +23,9 @@ def test_add_string_custom_delimiter_numbers():
     custom_delimiter_numbers_string = "2;9;5;12"
     result = string_add.add(custom_delimiter_numbers_string, delimiter=';')
     assert result == 28, "Result should be 28"
+
+
+def test_add_string_with_negative_numbers():
+    negative_number_string = "4,11,-7,8"
+    result = string_add.add(negative_number_string)
+    assert result == 23, "Result should be 23"
