@@ -1,5 +1,5 @@
-def add(numbers):
-    separated_numbers = numbers.split(',')
+def add(numbers, delimiter=','):
+    separated_numbers = numbers.split(delimiter)
     numbers_sum = 0
     for number in separated_numbers:
         if number.isdigit():

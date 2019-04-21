@@ -22,4 +22,4 @@ def test_add_string_default_delimiter_numbers():
 def test_add_string_custom_delimiter_numbers():
     custom_delimiter_numbers_string = "2;9;5;12"
     result = string_add.add(custom_delimiter_numbers_string, delimiter=';')
-    assert result == 30, "Result should be 30"
+    assert result == 28, "Result should be 28"
