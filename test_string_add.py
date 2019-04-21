@@ -11,3 +11,9 @@ def test_add_string_no_delimiter_numbers():
     no_delimiter_numbers_string = "1234"
     result = string_add.add(no_delimiter_numbers_string)
     assert result == 1234, "Result should be 1234"
+
+
+def test_add_string_default_delimiter_numbers():
+    default_delimiter_numbers_string = "1,2,3,4"
+    result = string_add.add(default_delimiter_numbers_string)
+    assert result == 10, "Result should be 10"
